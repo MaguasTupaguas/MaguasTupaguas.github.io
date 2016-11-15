@@ -15,6 +15,12 @@ var plumber = require('gulp-plumber');
 var cp = require('child_process');
 var jekyll = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 
+gulp.task('jekyll-build', function (done) {
+    browserSync.notify(messages.jekyllBuild);
+    return cp.spawn( jekyll , ['build'], {stdio: 'inherit'})
+        .on('close', done);
+});
+
 gulp.task('js', ['jsdel'], function(){
   return gulp.src('./app/src/js/*.js')
     .pipe(jshint())
@@ -30,7 +36,7 @@ gulp.task('js', ['jsdel'], function(){
 gulp.task('browserSync', function(){
   browserSync.init({
     server: {
-      baseDir: 'app'
+      baseDir: '_site'
     }
   });
 });
