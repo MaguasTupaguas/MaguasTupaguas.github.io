@@ -1,0 +1,41 @@
+{
+  "name": "infinity",
+  "version": "1.0.0",
+  "description": "Gulp Package for awesome starter projects",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "del": "^2.2.2",
+    "chalk": "^1.1.3",
+    "gulp": "^3.9.1",
+    "browser-sync": "^2.14.0",
+    "gulp-htmlmin": "^2.0.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify": "^0.0.14",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-jshint": "^2.0.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-plumber": "^1.1.0"
+  },
+  "devDependencies": {
+    "gulp-jshint": "^2.0.1",
+    "jshint": "^2.9.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mauricio Toledo",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaguasTupaguas/MaguasTupaguas.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MaguasTupaguas/MaguasTupaguas.github.io/issues"
+  },
+  "homepage": "https://github.com/MaguasTupaguas/MaguasTupaguas.github.io#readme"
+}
